@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-    <link rel="Icon" href="Fav-Icon/Cloth-1.png">
-
+    <link rel="Icon" href="images/logo.png">
+                            <!-- tailwindcss & daisyUI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+                            <!-- font awesome text script -->
+    <script src="https://kit.fontawesome.com/227738b897.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+                                                        <!-- header section -->
+    <header>
+        <nav>
+            <div class="flex justify-between items-center mt-12 mr-60 mb-14 ml-60  bg-[#F85559] rounded-full">
+                <div class="pl-14 pt-9 pb-9">
+                    <ul class="flex gap-8 text-zinc-50 text-lg">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Shop</li>
+                        <li>All fruits</li>
+                    </ul>
+                </div>
+                      <div class="navbar-center flex pt-9 pb-9">
+                        <img class="w-14 h-14" src="images/logo.png" alt="This is a Website logo">
+                        <a class="btn btn-ghost normal-case text-4xl text-[#FFFFFF] ">Fruit Burst</a>
+                      </div>
+
+                      <form class=" w-96 pt-8 pr-12 pb-8">   
+                        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"></label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-6 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg> 
+                            </div>
+                            <input type="search" id="default-search" class="block w-full p-4 pl-6 text-sm text-gray-900 border
+                              rounded-full bg-white white:bg-gray-700 
+                              white:border-gray-600 white:placeholder-gray-400 white:text-white white:focus:ring-blue-500
+                               white:focus:border-blue-500" placeholder="Search here..." required>   
+                        </div>
+                      </form>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
